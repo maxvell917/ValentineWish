@@ -3,19 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Wish</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Valentine Wish</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #f50057;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c21c49;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Happy Valentine's Day!</h1>
+        <h1>Happy Valentine’s Day!</h1>
     </header>
-    <main>
-        <p>Wishing you a day filled with love and joy.</p>
-        <p>May your heart be filled with happiness and your life with love.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Valentine's Wishes</p>
-    </footer>
+    <div class="container">
+        <img src="valentine-image.jpg" alt="Valentine's Day">
+        <p>Wishing you all the love and happiness on this special day!</p>
+        <button>Send Your Wishes</button>
+    </div>
 </body>
 </html>
